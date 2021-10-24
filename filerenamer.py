@@ -3,19 +3,19 @@
 import os
 def renamer():
     i = 0
-    path = "C:\\Users\\Anmol Agarwal\\Desktop\\New folder\\img\\"
+    path = "C:\\Users\\Anmol Agarwal\\Desktop\\New folder\\img\\"  # THIS RENAMES THE IMAGES IN THE FOLDER
     for filename in os.listdir(path):
         name=f"images.{i}.jpg"
         src = path + filename
         dest = path + name
 
-    path = "C:\\Users\\Anmol Agarwal\\Desktop\\New folder\\songs\\"
+    path = "C:\\Users\\Anmol Agarwal\\Desktop\\New folder\\songs\\" # THIS RENAMES THE SONGS IN THE FOLDER
     for filename in os.listdir(path):
         name=f"songs.{i}.mp3"
         src = path + filename
         dest = path + name
 
-    path = "C:\\Users\\Anmol Agarwal\\Desktop\\New folder\\files\\"
+    path = "C:\\Users\\Anmol Agarwal\\Desktop\\New folder\\files\\" # THIS RENAMES THE FILES IN THE FOLDER
     for filename in os.listdir(path):
         name=f"files.{i}.pdf"
         src = path + filename
